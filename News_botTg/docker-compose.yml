@@ -12,4 +12,4 @@ services:
     environment:
       NEWS_BOT_TOKEN: ${NEWS_BOT_TOKEN}
     volumes:
-      - ./subscriptions.json:/bot/subscriptions.json
+      - ./:/bot/
