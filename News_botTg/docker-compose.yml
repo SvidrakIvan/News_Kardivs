@@ -11,5 +11,3 @@ services:
     container_name: news-tg_bot
     environment:
       NEWS_BOT_TOKEN: ${NEWS_BOT_TOKEN}
-    volumes:
-      - ./:/bot/
