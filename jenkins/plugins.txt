@@ -1,0 +1,7 @@
+cvs
+pipeline-graph-view
+docker-commons
+docker-workflow
+git
+prometheus
+telegram-notifications

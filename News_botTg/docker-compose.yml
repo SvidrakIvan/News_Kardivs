@@ -1,0 +1,15 @@
+---
+version: '3.3'
+
+services:
+  news_tgbot:
+    image: news-tg_bot:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    container_name: news-tg_bot
+    environment:
+      NEWS_BOT_TOKEN: ${NEWS_BOT_TOKEN}
+    volumes:
+      - ./subscriptions.json:/bot/subscriptions.json
